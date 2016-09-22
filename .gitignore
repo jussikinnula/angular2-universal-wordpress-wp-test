@@ -6,6 +6,7 @@ web/app/upgrade
 web/app/uploads/*
 !web/app/uploads/.gitkeep
 web/app/languages
+web/app/themes
 
 # WordPress
 web/wp
