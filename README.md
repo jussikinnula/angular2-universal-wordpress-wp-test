@@ -47,6 +47,8 @@ See a complete working example in the [roots-example-project.com repo](https://g
 5. Set your site vhost document root to `/path/to/site/web/` (`/path/to/site/current/web/` if using deploys)
 6. Access WP admin at `http://example.com/wp/wp-admin`
 
+*Note!* If you plan to run your multisite on multiple domains, you need to change DOMAIN_CURRENT_SITE-setting in config/application.php, instructions can be found there. WordPress can't handle login cookies with different domains otherwise.
+
 ## Deploys
 
 There are two methods to deploy Bedrock sites out of the box:

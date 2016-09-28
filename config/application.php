@@ -92,6 +92,14 @@ if (!defined('ABSPATH')) {
 
 /**
  * Multi Site
+ *
+ * If your Multisite is running on multiple domains
+ * f.ex.: www.example.com main domain and www.subexample.com (instead of sub.example.com) as sub domain
+ * use $_SERVER[ 'HTTP_HOST' ] instead of WP_MULTISITE_MAIN_DOMAIN in DOMAIN_CURRENT_SITE:
+ * define( 'DOMAIN_CURRENT_SITE', $_SERVER[ 'HTTP_HOST' ]  );
+ *
+ * Without this, logins will only work in the DOMAIN_CURRENT_SITE.
+ * Reauth is required on all sites in the network after this.
  */
 define('WP_ALLOW_MULTISITE', env('WP_ALLOW_MULTISITE'));
 if (env('WP_MULTISITE_MAIN_DOMAIN')) {
@@ -103,3 +111,6 @@ if (env('WP_MULTISITE_MAIN_DOMAIN')) {
     define('BLOG_ID_CURRENT_SITE', 1);
     define('SUNRISE', true);
 }
+/*
+
+ */
