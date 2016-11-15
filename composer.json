@@ -47,6 +47,7 @@
   "require": {
     "ext-redis": "*",
     "frc/batcache": "~1.2-p1",
+    "koodimonni/composer-dropin-installer": "~1.0.2",
     "deliciousbrains/wp-amazon-s3-and-cloudfront": "dev-frc",
     "wpackagist-plugin/amazon-web-services": "~0.3.2",
     "wpackagist-plugin/sendgrid-email-delivery-simplified": "~1.6.2",
@@ -79,21 +80,16 @@
     },
     "dropin-paths": {
       "web/app/languages/": ["vendor:koodimonni-language"],
-      "web/app/languages/plugins/": ["vendor:koodimonni-plugin-language"]
+      "web/app/languages/plugins/": ["vendor:koodimonni-plugin-language"],
+      "web/app/": [
+        "package:wpackagist-plugin/wordpress-mu-domain-mapping:sunrise.php",
+        "package:tillkruss/redis-object-cache:includes/object-cache.php",
+        "package:frc/batcache:advanced-cache.php"
+      ]
     },
     "wordpress-install-dir": "web/wp"
   },
   "scripts": {
-    "post-update-cmd": [
-      "cp web/app/plugins/wordpress-mu-domain-mapping/sunrise.php web/app/sunrise.php",
-      "cp web/app/plugins/redis-object-cache/includes/object-cache.php web/app/object-cache.php",
-      "cp web/app/mu-plugins/batcache/advanced-cache.php web/app/advanced-cache.php"
-    ],
-    "post-install-cmd": [
-      "cp web/app/plugins/wordpress-mu-domain-mapping/sunrise.php web/app/sunrise.php",
-      "cp web/app/plugins/redis-object-cache/includes/object-cache.php web/app/object-cache.php",
-      "cp web/app/mu-plugins/batcache/advanced-cache.php web/app/advanced-cache.php"
-    ],
     "test": [
       "vendor/bin/phpcs --ignore=web/wp/,web/app/,vendor/,config/ -n -s ."
     ]
