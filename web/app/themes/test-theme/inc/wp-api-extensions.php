@@ -119,6 +119,7 @@ function find_post( WP_REST_Request $request ) {
 
     if ( isset( $object ) ) {
         $object['acf'] = get_acf_content_callback( $object );
+        $object['featured_media'] = get_post_thumbnail_id( $object['ID'] );
         if ( $object['post_type'] == 'page' ) {
             $object['is_home'] = check_is_home( $object, null, null );
             $object['is_front_page'] = check_is_front_page( $object, null, null );
