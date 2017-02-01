@@ -1,0 +1,24 @@
+// ============================================================================
+// Buttons
+// ============================================================================
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	padding: 0.25em 0.75em;
+	border: $border__button;
+	background-color: $color__background-button;
+	color: $color__button;
+	transition: background-color 0.3s ease-out;
+
+	&:hover {
+		background-color: $color__background-button-hover;
+		border-color: $color__border-button-hover;
+	}
+
+	&:active,
+	&:focus {
+		border-color: $color__border-button-focus;
+	}
+}

@@ -1,0 +1,23 @@
+// ============================================================================
+// Layout
+// ============================================================================
+// Proportional Grids: https://github.com/mattberridge/Proportional-Grids/
+// ============================================================================
+
+@import "proportional-grids";
+
+.container,
+.content-area,
+.widget-area {
+	margin: 0 auto;
+}
+
+.content-area {
+
+}
+
+.site-header,
+.site-content,
+.site-footer {
+	clear: both;
+}

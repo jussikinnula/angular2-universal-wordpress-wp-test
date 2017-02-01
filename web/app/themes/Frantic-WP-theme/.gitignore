@@ -1,0 +1,37 @@
+## General
+.*
+!.profile.d
+!.user.ini
+!.gitignore
+!.csslintrc
+!.jshintrc
+!.scss-lint.yml
+!.editorconfig
+
+## Temporary files
+*~
+*.log
+
+## Local configuration
+*.sublime-project
+*.sublime-workspace
+codekit-config.json
+
+## Local dependencies
+node_modules
+/vendor/
+
+## WordPress
+/public/wordpress/
+/public/wp-content/uploads/
+/public/wp-content/cache/
+/public/wp-content/backups/
+/public/wp-content/backup-db/
+/public/wp-content/blogs.dir/
+/public/wp-content/upgrade/
+sitemap.xml
+sitemap.xml.gz
+
+## Query Monitor Plugin (only for local dev)
+/public/wp-content/db.php
+/public/wp-content/plugins/query-monitor/

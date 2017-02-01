@@ -1,0 +1,149 @@
+# Configuration file for SCSS lint
+# Source: https://github.com/ahmednuaman/grunt-scss-lint
+# Variables: https://github.com/brigade/scss-lint/blob/master/lib/scss_lint/linter/README.md
+linters:
+  BorderZero:
+    enabled: true
+
+  CapitalizationInSelector:
+    enabled: true
+
+  ColorKeyword:
+    enabled: false
+
+  ColorVariable:
+    enabled: false
+
+  Comment:
+    enabled: false
+
+  Compass::*:
+    enabled: false
+
+  DebugStatement:
+    enabled: true
+
+  DeclarationOrder:
+    enabled: false
+
+  DuplicateProperty:
+    enabled: false
+
+  EmptyLineBetweenBlocks:
+    enabled: true
+    ignore_single_line_blocks: true
+
+  EmptyRule:
+    enabled: false
+
+  FinalNewline:
+    enabled: false
+    present: true
+
+  HexLength:
+    enabled: false
+    style: short # or 'long'
+
+  HexNotation:
+    enabled: false
+    style: lowercase # or 'uppercase'
+
+  IdSelector:
+    enabled: false
+
+  ImportPath:
+    enabled: false
+
+  HexValidation:
+    enabled: true
+
+  IdWithExtraneousSelector:
+    enabled: true
+
+  Indentation:
+    enabled: false
+    character: tab
+    width: 1
+
+  ImportantRule:
+    enabled: false
+
+  LeadingZero:
+    enabled: true
+    style: include_zero # or 'exclude_zero'
+
+  MergeableSelector:
+    enabled: true
+    force_nesting: true
+
+  NameFormat:
+    enabled: false
+    convention: hyphenated_lowercase # or 'BEM', or a regex pattern
+
+  NestingDepth:
+    max_depth: 6
+
+  PlaceholderInExtend:
+    enabled: false
+
+  PropertySortOrder:
+    enabled: false
+
+  PropertySpelling:
+    enabled: true
+    extra_properties: []
+
+  QualifyingElement:
+    enabled: false
+
+  SelectorDepth:
+    enabled: true
+    max_depth: 5
+
+  SelectorFormat:
+    enabled: false
+
+  Shorthand:
+    enabled: true
+
+  SingleLinePerSelector:
+    enabled: false
+
+  SpaceAfterComma:
+    enabled: true
+
+  SpaceAfterPropertyColon:
+    enabled: true
+
+  SpaceAfterPropertyName:
+    enabled: true
+
+  SpaceBeforeBrace:
+    enabled: true
+    allow_single_line_padding: false
+
+  SpaceBetweenParens:
+    enabled: false
+    spaces: 0
+
+  StringQuotes:
+    enabled: false
+    style: single_quotes # or double_quotes
+
+  TrailingSemicolonAfterPropertyValue:
+    enabled: true
+
+  UnnecessaryMantissa:
+    enabled: true
+
+  UrlFormat:
+    enabled: true
+
+  UrlQuotes:
+    enabled: true
+
+  VendorPrefix:
+    enabled: false
+
+  ZeroUnit:
+    enabled: false

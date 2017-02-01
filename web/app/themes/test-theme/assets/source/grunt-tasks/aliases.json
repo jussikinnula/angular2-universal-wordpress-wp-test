@@ -1,0 +1,15 @@
+{
+
+	"default": [
+		"pot",
+		"po2mo",
+		"scsslint",
+		"sass",
+		"autoprefixer",
+		"jshint",
+		"uglify",
+		"notify",
+		"watch"
+	]
+
+}

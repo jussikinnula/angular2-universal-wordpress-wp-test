@@ -1,0 +1,20 @@
+/* ==========================================================================
+	Login styles
+/* ========================================================================== */
+
+@import "theme/config";
+@import "mixins/mixins";
+
+.login h1 a {
+	background-image: url('../images/frantic_logo.png');
+	background-image: url('../images/frantic_logo.svg'), none;
+	height: 35px;
+	width: auto;
+	background-size: contain;
+}
+
+// Hide back to blog link on login screen
+#backtoblog { visibility: hidden;  }
+
+// Hide lost password link
+// #nav { visibility: hidden; }

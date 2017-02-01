@@ -1,0 +1,6 @@
+/* ==========================================================================
+	Login styles
+/* ========================================================================== */
+.login h1 a { background-image: url("../images/frantic_logo.png"); background-image: url("../images/frantic_logo.svg"), none; height: 35px; width: auto; background-size: contain; }
+
+#backtoblog { visibility: hidden; }

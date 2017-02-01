@@ -1,0 +1,35 @@
+{
+
+	"bitwise"   : true,
+	"boss"      : true,
+	"browser"   : true,
+	"curly"     : false,
+	"eqeqeq"    : true,
+	"eqnull"    : true,
+	"forin"     : true,
+	"immed"     : true,
+	"latedef"   : true,
+	"newcap"    : true,
+	"noarg"     : true,
+	"smarttabs" : true,
+	"sub"       : true,
+	"trailing"  : true,
+	"undef"     : true,
+
+	"globals": {
+		"$"         : true,
+		"jQuery"    : true,
+		"Backbone"  : true,
+		"console"   : true,
+		"DEBUG"     : true,
+		"define"    : true,
+		"document"  : true,
+		"jRespond"  : true,
+		"Modernizr" : true,
+		"module"    : true,
+		"process"   : true,
+		"require"   : true,
+		"Zepto"     : true
+	}
+
+}

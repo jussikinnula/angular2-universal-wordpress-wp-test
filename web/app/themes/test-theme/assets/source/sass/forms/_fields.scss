@@ -1,0 +1,32 @@
+// ============================================================================
+// Fields
+// ============================================================================
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+	color: $color__text-input;
+	border: 1px solid $color__border-input;
+
+	&:focus {
+		color: $color__text-input-focus;
+		outline: solid 3px $color__primary;
+	}
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+	padding: 20px;
+}
+
+textarea {
+	overflow: auto;
+	padding-left: 3px;
+	width: 100%;
+}

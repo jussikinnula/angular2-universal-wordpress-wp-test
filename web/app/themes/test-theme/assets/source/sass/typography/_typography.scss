@@ -1,0 +1,28 @@
+// ============================================================================
+// Typography
+// ============================================================================
+
+@import "fonts";
+@import "icons";
+
+html {
+	font-family: $font__main;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	color: $color__text-main;
+	line-height: $font__line-height-body;
+}
+
+@import "headings";
+@import "elements";
+@import "links";
+
+p {
+	margin: auto auto 1em;
+	word-spacing: 0.075em;
+}
